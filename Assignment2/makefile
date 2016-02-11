@@ -1,4 +1,4 @@
-# Makefile for: 
+# Makefile for: C Lang Assignment 2
 # Author: 	Tryton Van Meer
 
 CC=gcc
