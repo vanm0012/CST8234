@@ -1,0 +1,23 @@
+# My particle system is a small explosion.
+
+There is an initial burst in the center as all the particles move outwards at different speeds and fade away slowly.
+
+## For the particles attributes:
+
++ RGB for the colour of the particle is set to {0,0,0} becuase starting colour doesn't matter
+
++ All particles start at position 0,0
+
++ Speed is determined by multipling 0.1 with a pseudorandom integer in the range of 1 to 9
+
++ Direction is chosen with a switch statment and depends on a number chosen pseudorandomly
+
++ Life span is 100 + a pseudorandom int in the range of 0-100
+
+## On each update cycle
+
++ For colour, each RGB value is randomly set to 1 or 0
+
++ The particle position is moved according to direction * speed
+
++ Lifespan is decreased by one and if it equals 0, the particle is removed from the linked list
